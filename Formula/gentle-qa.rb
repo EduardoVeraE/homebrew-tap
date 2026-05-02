@@ -5,21 +5,21 @@
 class GentleQa < Formula
   desc "Gentle-QA — One command. Any test. Any framework."
   homepage "https://github.com/EduardoVeraE/Gentle-QA"
-  version "1.25.0"
+  version "1.25.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/EduardoVeraE/gentle-qa/releases/download/v1.25.0/gentle-qa_1.25.0_darwin_amd64.tar.gz"
-      sha256 "880ce7effc9dc8b17d633531cb48458feb0c4ef9b61bc25e3cbb5f7ac00a4ad7"
+      url "https://github.com/EduardoVeraE/gentle-qa/releases/download/v1.25.1/gentle-qa_1.25.1_darwin_amd64.tar.gz"
+      sha256 "d07c781e52da89fcac6e161e459b0dd6c7dca1fd27d75024502324f9e6c03895"
 
       define_method(:install) do
         bin.install "gentle-qa"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/EduardoVeraE/gentle-qa/releases/download/v1.25.0/gentle-qa_1.25.0_darwin_arm64.tar.gz"
-      sha256 "bbe8ac79f8d3bc9b0ae3d0e9c3e8981d789189693f8b71433003b57131f46061"
+      url "https://github.com/EduardoVeraE/gentle-qa/releases/download/v1.25.1/gentle-qa_1.25.1_darwin_arm64.tar.gz"
+      sha256 "b158e1d28fe6eb7f3c34d53d06b651cf39821b5162f1bcc6ea9682f791ef8c11"
 
       define_method(:install) do
         bin.install "gentle-qa"
@@ -29,15 +29,15 @@ class GentleQa < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/EduardoVeraE/gentle-qa/releases/download/v1.25.0/gentle-qa_1.25.0_linux_amd64.tar.gz"
-      sha256 "fcf939656cb484385b19c6f304223d7225d5f2e30c5639c5e459a7dde80654a7"
+      url "https://github.com/EduardoVeraE/gentle-qa/releases/download/v1.25.1/gentle-qa_1.25.1_linux_amd64.tar.gz"
+      sha256 "83078f70eb3da80bc6ab30e7c36d1fb636e788bce7a76c958b8f7fda5021d931"
       define_method(:install) do
         bin.install "gentle-qa"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/EduardoVeraE/gentle-qa/releases/download/v1.25.0/gentle-qa_1.25.0_linux_arm64.tar.gz"
-      sha256 "ef27639a1912c04aa1a73b1599d288ece67ad9253bce9a1a96e5895781247286"
+      url "https://github.com/EduardoVeraE/gentle-qa/releases/download/v1.25.1/gentle-qa_1.25.1_linux_arm64.tar.gz"
+      sha256 "3b8a3d56b882906f46224fef20455d1fcf5b4df92b8227e2a37c39d850823cd4"
       define_method(:install) do
         bin.install "gentle-qa"
       end
