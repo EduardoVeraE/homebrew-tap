@@ -11,7 +11,7 @@ class GentleQe < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/EduardoVeraE/gentle-qe/releases/download/v1.30.1/gentle-qe_1.30.1_darwin_amd64.tar.gz"
-      sha256 "fdbd6f34fb9527b885d29c6ff9a534983143684ceda4cf4bbfd632756c5c2d7b"
+      sha256 "3f490bd2df371ae1dfc93e320ceb1e80a424f28e6e802fdd0f02ded762b24c33"
 
       define_method(:install) do
         bin.install "gentle-qe"
@@ -19,7 +19,7 @@ class GentleQe < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/EduardoVeraE/gentle-qe/releases/download/v1.30.1/gentle-qe_1.30.1_darwin_arm64.tar.gz"
-      sha256 "f4f3da9b5d4838b303220748e68e2b7de5312d8c04d4bfc9d06534dea1dd5f88"
+      sha256 "fb36076127efe69f7ff4920fb3748bc141efc0298661a11b0a4564c6dd317fc7"
 
       define_method(:install) do
         bin.install "gentle-qe"
@@ -30,14 +30,14 @@ class GentleQe < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/EduardoVeraE/gentle-qe/releases/download/v1.30.1/gentle-qe_1.30.1_linux_amd64.tar.gz"
-      sha256 "5135bce9226b30ee46dd112576951ab072f800e8f37a608e15f88a49b5972b31"
+      sha256 "8d45df6067787fcc73665bd2467135450384504e52fca20a89ed59fd86e8bfce"
       define_method(:install) do
         bin.install "gentle-qe"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/EduardoVeraE/gentle-qe/releases/download/v1.30.1/gentle-qe_1.30.1_linux_arm64.tar.gz"
-      sha256 "49abe1695c977c5e6d8af8d1b4afbc5f73318c56d50d24797f5249da5b4d5ca6"
+      sha256 "0dde6a842d9377dbe66ccb65e4a3e64eb6f84861b431727718145d1cd3e3aae3"
       define_method(:install) do
         bin.install "gentle-qe"
       end
