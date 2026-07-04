@@ -5,21 +5,21 @@
 class GentleQe < Formula
   desc "Gentle-QE — Unified AI Ecosystem for Testing and Reliability."
   homepage "https://github.com/EduardoVeraE/gentle-qe"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/EduardoVeraE/gentle-qe/releases/download/v0.1.1/gentle-qe_0.1.1_darwin_amd64.tar.gz"
-      sha256 "185e5e921500428d3a72c028609d49e7614e8d28ed89305d7b3b8453a7379192"
+      url "https://github.com/EduardoVeraE/gentle-qe/releases/download/v0.1.2/gentle-qe_0.1.2_darwin_amd64.tar.gz"
+      sha256 "476b379fb630761777a4dc0553e309f4414ba46a83634ae63cab9fbeb8707051"
 
       define_method(:install) do
         bin.install "gentle-qe"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/EduardoVeraE/gentle-qe/releases/download/v0.1.1/gentle-qe_0.1.1_darwin_arm64.tar.gz"
-      sha256 "bf118da9b572599c7380ae6086c6797703b1e3ca7d7e8df1ed95c382739dd5db"
+      url "https://github.com/EduardoVeraE/gentle-qe/releases/download/v0.1.2/gentle-qe_0.1.2_darwin_arm64.tar.gz"
+      sha256 "253a7d9d678447ebdd03859a15bf9398edc40f8fddbc36d040abcbc661282b56"
 
       define_method(:install) do
         bin.install "gentle-qe"
@@ -29,15 +29,15 @@ class GentleQe < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/EduardoVeraE/gentle-qe/releases/download/v0.1.1/gentle-qe_0.1.1_linux_amd64.tar.gz"
-      sha256 "288fe2b242b9bc125570545e787cdb822b6c9e8830459884e86493c52d021c47"
+      url "https://github.com/EduardoVeraE/gentle-qe/releases/download/v0.1.2/gentle-qe_0.1.2_linux_amd64.tar.gz"
+      sha256 "fce606b94018ffd47c6fb8b65c938ae276ff3c8b6adc67e419289f66d890e9aa"
       define_method(:install) do
         bin.install "gentle-qe"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/EduardoVeraE/gentle-qe/releases/download/v0.1.1/gentle-qe_0.1.1_linux_arm64.tar.gz"
-      sha256 "a35b8f8c60bd6b1887fb478f75c5a5d8a9a28ce2d99f2fd6bf4eb5b79120eba7"
+      url "https://github.com/EduardoVeraE/gentle-qe/releases/download/v0.1.2/gentle-qe_0.1.2_linux_arm64.tar.gz"
+      sha256 "673b11ae73c7388d27af694d941ddb7e68505243bd56a44153a45044507a3245"
       define_method(:install) do
         bin.install "gentle-qe"
       end
