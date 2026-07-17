@@ -11,18 +11,22 @@ class GentleQe < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/EduardoVeraE/gentle-qe/releases/download/v0.1.3/gentle-qe_0.1.3_darwin_amd64.tar.gz"
-      sha256 "10669dbafd7ab55e54eafaea5dfd00f455cdb91902353a4c99b0f084ec0e4422"
+      sha256 "1978a4575e17655ac56f13f18e94be8342d39d2a145419a47aceeb2331f631fc"
 
       define_method(:install) do
         bin.install "gentle-qe"
+        bin.install_symlink "gentle-qe" => "evqe"
+        bin.install_symlink "gentle-qe" => "qe"
       end
     end
     if Hardware::CPU.arm?
       url "https://github.com/EduardoVeraE/gentle-qe/releases/download/v0.1.3/gentle-qe_0.1.3_darwin_arm64.tar.gz"
-      sha256 "7d232abd3729a25899f95cb420368e6e0bae7565bf08ea22c01a49c59fa0ffce"
+      sha256 "b7b4eb06607e4b7c80325fc0e3e7bde56c41357829105ee33457ceba1795f1f5"
 
       define_method(:install) do
         bin.install "gentle-qe"
+        bin.install_symlink "gentle-qe" => "evqe"
+        bin.install_symlink "gentle-qe" => "qe"
       end
     end
   end
@@ -30,16 +34,20 @@ class GentleQe < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/EduardoVeraE/gentle-qe/releases/download/v0.1.3/gentle-qe_0.1.3_linux_amd64.tar.gz"
-      sha256 "066a3810b14f4e937dec733a9fe6c4f3a976d27c97030ed7acd468fd10001974"
+      sha256 "aa06cccff8286ac5fc73f83e03dae6725b3456f859fc766ed99bf68f8788b769"
       define_method(:install) do
         bin.install "gentle-qe"
+        bin.install_symlink "gentle-qe" => "evqe"
+        bin.install_symlink "gentle-qe" => "qe"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/EduardoVeraE/gentle-qe/releases/download/v0.1.3/gentle-qe_0.1.3_linux_arm64.tar.gz"
-      sha256 "32adb84c44ddb0a6f187c959c0994fb452c7305ae67f9e0dbed0a769ddee2f7f"
+      sha256 "e9869109ff78d2108a10f0f27f6dd14784c0f43fd9f2b385dc4dad0f390b13f9"
       define_method(:install) do
         bin.install "gentle-qe"
+        bin.install_symlink "gentle-qe" => "evqe"
+        bin.install_symlink "gentle-qe" => "qe"
       end
     end
   end
